@@ -1,0 +1,527 @@
+/* ===== ESTILO GENERAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e10;
+    color: #f1f1f1;
+    scroll-behavior: smooth;
+}
+
+/* ===== COLORES TEMÁTICOS ===== */
+:root {
+    --color-principal: #7b4eff;
+    --color-secundario: #00d8ff;
+    --color-fondo: #111;
+    --color-card: #1a1a1d;
+    --color-texto: #f5f5f5;
+    --color-hover: #00ffaa;
+}
+
+/* ===== HEADER ===== */
+header.casa {
+    background: rgba(20, 20, 30, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header.casa h1 {
+    color: var(--color-principal);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+header.casa nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header.casa nav ul li a,
+header.casa nav button {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header.casa nav ul li a:hover,
+header.casa nav button:hover {
+    color: var(--color-secundario);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    background: var(--color-fondo);
+    border-radius: 6px;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    color: var(--color-secundario);
+}
+
+/* ===== BANNER ===== */
+.banner {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.banner h2,
+.banner p,
+.banner button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.banner h2 {
+    top: 30%;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    top: 45%;
+    font-size: 1.2rem;
+}
+
+.banner button {
+    top: 60%;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--color-principal);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner button:hover {
+    background-color: var(--color-secundario);
+}
+
+/* ===== BLOQUES GENERALES ===== */
+.section,
+.experiencias,
+.educacion,
+#certifications,
+#referencias,
+.contactos {
+    text-align: center;
+    margin: 80px auto;
+    color: #fff;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #111 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px #00ffe5;
+    max-width: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover,
+.experiencias:hover,
+.educacion:hover,
+#certifications:hover,
+#referencias:hover,
+.contactos:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px #00ffe5, 0 0 70px #00ffe5;
+}
+
+.section h2,
+.experiencias h2,
+.educacion h2,
+#certifications h2,
+#referencias h2,
+.contactos h2 {
+    color: #00ffe5;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ffe5;
+    letter-spacing: 2px;
+}
+
+/* ===== CERTIFICACIONES ===== */
+.cartificaciones {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 229, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartificaciones:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #00ffe5, 0 0 60px #00ffe5;
+}
+
+.cartificaciones h2 {
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 8px #00ffe5;
+}
+
+.cartificaciones p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+/* ===== EXPERIENCIAS ===== */
+.experiencias {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(135deg, #141414, #1b1b1b);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 229, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencias:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #00ffe5, 0 0 60px #00ffe5;
+}
+
+.experiencias h2 {
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ffe5;
+}
+
+.experiencias p {
+    font-size: 1rem;
+    color: #eee;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.experiencia_img {
+    width: 180px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 15px #00ffe5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia_img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffe5;
+}
+
+/* ===== HABILIDADES ===== */
+.lista-habilidades {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.lista-habilidades li {
+    margin-bottom: 20px;
+}
+
+.lista-habilidades span {
+    display: block;
+    font-weight: 600;
+    color: var(--color-secundario);
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background: #222;
+    border-radius: 6px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    color: #fff;
+    text-align: right;
+    font-size: 0.9rem;
+    padding-right: 5px;
+    line-height: 20px;
+    border-radius: 6px;
+    transition: width 1s ease-in-out;
+}
+
+.progress.htmlcss {
+    background: linear-gradient(90deg, #e44d26, #f06529);
+}
+
+.progress.js {
+    background: linear-gradient(90deg, #f7df1e, #ffdd00);
+    color: #000;
+}
+
+.progress.python {
+    background: linear-gradient(90deg, #3776ab, #4b8bbe);
+}
+
+.progress.mysql {
+    background: linear-gradient(90deg, #00758f, #00aaff);
+}
+
+.progress.git {
+    background: linear-gradient(90deg, #f34f29, #f05032);
+}
+
+/* ===== PROYECTOS ===== */
+#proyectos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding-left: 0;
+    list-style: none;
+}
+
+#proyectos li {
+    background: linear-gradient(135deg, #1a1a1a, #121212);
+    border: 2px solid #00ffe5;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 255, 229, 0.4);
+}
+
+#proyectos li:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px #00ffe5, 0 0 60px #00ffe5;
+}
+
+.proyecto-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+#proyectos li:hover .proyecto-img {
+    filter: brightness(1.1);
+}
+
+.proyecto_informacion {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.85);
+    color: #e5e5e5;
+}
+
+.proyecto_informacion p {
+    font-size: 0.95em;
+    margin: 10px 0 15px;
+    line-height: 1.4;
+}
+
+.proyecto_informacion button {
+    background: linear-gradient(90deg, #00ffe5, #008cff);
+    border: none;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.proyecto_informacion button:hover {
+    background: linear-gradient(90deg, #ff00ff, #00ffe5);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffe5;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #000;
+    color: #999;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header.casa {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    #proyectos ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section,
+    .experiencias,
+    .educacion,
+    .contactos,
+    #certifications,
+    #referencias {
+        padding: 60px 20px;
+        width: 90%;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .experiencia_img {
+        width: 150px;
+    }
+}
+
+/* ===== CONTACTO COMPACTO ===== */
+.contactos {
+    text-align: center;
+    margin: 40px auto;
+    /* menos espacio arriba y abajo */
+    padding: 30px 20px;
+    /* padding más compacto */
+    background: linear-gradient(145deg, #0b0b0d, #161616);
+    border-radius: 12px;
+    /* un poco más pequeño */
+    box-shadow: 0 0 15px #00ffe5;
+    max-width: 600px;
+    /* más angosto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactos:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #00ffe5, 0 0 40px #00ffe5;
+}
+
+.contactos h2 {
+    color: var(--color-secundario);
+    font-size: 1.6rem;
+    /* más chico */
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px #00ffe5;
+}
+
+.contactos form .campo {
+    margin-bottom: 12px;
+    /* menos espacio entre campos */
+    text-align: left;
+}
+
+.contactos label {
+    display: block;
+    font-size: 0.9rem;
+    /* más pequeño */
+    margin-bottom: 4px;
+    color: #ccc;
+}
+
+.contactos input,
+.contactos textarea {
+    width: 100%;
+    padding: 6px 10px;
+    /* más compacto */
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: #fff;
+}
+
+.contactos button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #00ffe5, #008cff);
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactos button:hover {
+    background: linear-gradient(90deg, #ff00ff, #00ffe5);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.info-extra {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* más compacto */
+    flex-wrap: wrap;
+}
+
+.info-extra li {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    /* más pequeño */
+    gap: 6px;
+}
+
+.contacto_img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,1 +1,203 @@
-    
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danielle Figueroa | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== MENÚ SUPERIOR ===== -->
+    <header class="casa">
+        <h1>Danielle Figueroa</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="dropdown">
+                    <button class="btn-dark dropdown-toggle" type="button" onclick="toggleDropdown()">Proyectos</button>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 1</a></li>
+                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 2</a></li>
+                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== BANNER ===== -->
+    <div class="banner">
+        <img src="resource/img/programming-background-with-person-working-with-codes-computer-1024x683.jpg.optimal.jpg"
+            alt="banner">
+        <div class="banner-texto">
+            <h2>Bienvenido a mi Portafolio</h2>
+            <p>Explora mis proyectos y habilidades en desarrollo web.</p>
+            <button onclick="location.href='#proyecto'">Ver Proyectos</button>
+        </div>
+    </div>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="section sobre-mi derecha" id="sobre-mi">
+        <div class="contenido">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy una técnica en programación de Santiago de Chile que disfruta aprender cosas nuevas y enfrentar
+                desafíos.
+                Me gusta trabajar en equipo y compartir mis conocimientos con otros. En mis tiempos libres me gusta
+                escuchar música, jugar volleyball y salir con mis amigos.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== MI CARRERA ===== -->
+    <section class="section mi_carrera izquierda" id="mi_carrera">
+        <div class="contenido">
+            <h2>Mi Carrera</h2>
+            <p>
+                He trabajado en varios proyectos de desarrollo web, utilizando tecnologías como HTML, CSS y JavaScript.
+                También he aprendido sobre bases de datos y control de versiones con Git.
+                He realizado proyectos en Python, trabajando en equipo y cumpliendo con los plazos establecidos.
+            </p>
+        </div>
+    </section>
+
+    <div class="cartificaciones">
+        <h2>Certificaciones</h2>
+        <p>He obtenido varias certificaciones en desarrollo web y programación, incluyendo:</p>
+        <p>semana de alternancia en inacap con certificación en python 2025</p>
+    </div>
+
+    <div class="experiencias">
+        <h2>Experiencias</h2>
+        <p>he trabajado un dia de alternancia en en una empresa llamada flapp que hacer e-commerce
+            donde tuve que hacer ayudar las empresas sobre sus dudas y estar dentro de la base de datos</p>
+        <img src="resource/img/6fea7f871e2de65b062f562d9709e155e911d938-5242880.png" alt="flapp logo"
+            class="experiencia_img">
+    </div>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section habilidades derecha" id="habilidades">
+        <div class="contenido">
+            <h2>Habilidades</h2>
+            <ul class="lista-habilidades">
+                <li>
+                    <span>HTML & CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress htmlcss" style="width:95%">95%</div>
+                    </div>
+                </li>
+                <li>
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress js" style="width:80%">80%</div>
+                    </div>
+                </li>
+                <li>
+                    <span>Python (Backend)</span>
+                    <div class="progress-bar">
+                        <div class="progress python" style="width:75%">75%</div>
+                    </div>
+                </li>
+                <li>
+                    <span>MySQL (Base de datos)</span>
+                    <div class="progress-bar">
+                        <div class="progress mysql" style="width:70%">70%</div>
+                    </div>
+                </li>
+                <li>
+                    <span>Git & GitHub</span>
+                    <div class="progress-bar">
+                        <div class="progress git" style="width:85%">85%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <ul>
+            <li onmouseover="hoverProyecto(this)" onmouseout="unhoverProyecto(this)">
+                <img src="resource/img/Captura.PNG" alt="Proyecto Clima" class="proyecto-img">
+                <div class="proyecto_informacion">
+                    <p>Réplica de página web del clima.</p>
+                    <button onclick="abrirYEliminar(this)">Ver en GitHub</button>
+                </div>
+            </li>
+
+            <li onmouseover="hoverProyecto(this)" onmouseout="unhoverProyecto(this)">
+                <img src="resource/img/Captura de pantalla 2025-10-28 193622.png" alt="Proyecto like"
+                    class="proyecto-img">
+                <div class="proyecto_informacion">
+                    <p>Interfaz tipo Facebook desarrollada con HTML, CSS y JS.</p>
+                    <button onclick="abrirYEliminar(this)">Ver en GitHub</button>
+                </div>
+            </li>
+
+            <li onmouseover="hoverProyecto(this)" onmouseout="unhoverProyecto(this)">
+                <img src="resource/img/Captura de pantalla 2025-10-08 160003.png" alt="Proyecto youtube"
+                    class="proyecto-img">
+                <div class="proyecto_informacion">
+                    <p>Simulación de tienda online con carrito de compras dinámico.</p>
+                    <button onclick="abrirYEliminar(this)">Ver en GitHub</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ===== CONTACTO ===== -->
+    <!-- ===== CONTACTO ===== -->
+    <section class="contactos" id="contacto">
+        <h2>Contáctame</h2>
+
+        <form class="form-contacto" onsubmit="enviarFormulario(event)">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <ul class="info-extra">
+            <li>
+                <img src="resource/img/gmail.png" class="contacto_img">
+                <a href="mailto:sofidany.figueroa@gmail.com">sofidany.figueroa@gmail.com</a>
+            </li>
+            <li>
+                <img src="resource/img/telefono.png" class="contacto_img">
+                <span>+56912345678</span>
+            </li>
+            <li>
+                <img src="resource/img/github.png" class="contacto_img">
+                <a href="https://github.com/danielle3c" target="_blank">danielle3c</a>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Danielle Figueroa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
