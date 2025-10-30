@@ -47,7 +47,7 @@ Copiar código
 
 1. Clonar repositorio:
 ```bash
-git clone https://github.com/usuario/mi-portafolio.git
+https://danielle3c.github.io/portafolio/
 Abrir index.html en navegador.
 
 Modificar imágenes, textos y colores según necesidad.
