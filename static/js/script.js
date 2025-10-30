@@ -21,9 +21,9 @@ function abrirYEliminar(btn) {
     if (imgAlt.includes("Clima")) {
         link = "https://github.com/danielle3c/desarrollo_de_aplic/tree/main/3.7%20Tiempo%20-%20onchange";
     } else if (imgAlt.includes("Facebook")) {
-        link = "https://github.com/danielle3c/desarrollo_de_aplic/tree/main/3.8%20Proyecto%203";
+        link = "https://github.com/danielle3c/desarrollo_de_aplic/tree/main/3.2%20Me%20gusta%20(parte%202)";
     } else if (imgAlt.includes("Tienda")) {
-        link = "https://github.com/danielle3c/desarrollo_de_aplic/tree/main/3.9%20Tienda%20Online";
+        link = "https://github.com/danielle3c/desarrollo_de_aplic/tree/main/3.6%20Vista%20previa%20de%20video%20-%20Onmouseover%20y%20Onmouseout";
     }
 
     // Abrir GitHub
