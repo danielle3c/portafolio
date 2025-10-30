@@ -344,6 +344,27 @@ header.casa nav button:hover {
 }
 
 /* ===== PROYECTOS ===== */
+#proyectos {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(145deg, #121212, #1e1e1e);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 229, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#proyectos:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px #00ffe5, 0 0 70px #00ffe5;
+}
+#proyectos h2 {
+    color: var(--color-secundario);
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00ffe5;
+    letter-spacing: 2px;
+}
 #proyectos ul {
     display: flex;
     flex-wrap: wrap;

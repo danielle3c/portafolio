@@ -20,9 +20,9 @@
                 <li class="dropdown">
                     <button class="btn-dark dropdown-toggle" type="button" onclick="toggleDropdown()">Proyectos</button>
                     <ul class="dropdown-menu bg-dark">
-                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 1</a></li>
-                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 2</a></li>
-                        <li><a class="dropdown-item text-light" href="#proyecto">Proyecto 3</a></li>
+                        <li><a class="dropdown-item text-light" href="#proyecto_clima">Proyecto 1</a></li>
+                        <li><a class="dropdown-item text-light" href="#proyecto_youtube">Proyecto 2</a></li>
+                        
                     </ul>
                 </li>
                 <li><a href="#habilidades">Habilidades</a></li>
@@ -90,8 +90,10 @@
             donde tuve que hacer ayudar las empresas sobre sus dudas y estar dentro de la base de datos</p>
         <img src="resource/img/6fea7f871e2de65b062f562d9709e155e911d938-5242880.png" alt="flapp logo"
             class="experiencia_img">
-            <h3>challengers</h3>
-            <p>estuve un concurso invasion en el cual tuvimos que hacer un proyecto en grupo.</p>
+                        <h3>challengers</h3>
+            <p>estuve un concurso invasion en el cual tuvimos que hacer un proyecto en grupo.
+                el proyecto consistia en hacer una como la gente de la feria tenia podia recibir eduacion finaciera.
+            </p>
             <img src="resource/img/challengers-2023-scaled.webp" alt="challengers logo" class="experiencia_img">
     </div>
 
@@ -138,7 +140,7 @@
         <h2>Mis Proyectos</h2>
         <ul>
             <li onmouseover="hoverProyecto(this)" onmouseout="unhoverProyecto(this)">
-                <img src="resource/img/Captura.PNG" alt="Proyecto Clima" class="proyecto-img">
+                <img src="resource/img/Captura.PNG" alt="Proyecto Clima" class="proyecto-img" id="proyecto_clima">
                 <div class="proyecto_informacion">
                     <p>Réplica de página web del clima.</p>
                     <button onclick="abrirYEliminar(this)">Ver en GitHub</button>
@@ -146,15 +148,13 @@
             </li>
 
             <li onmouseover="hoverProyecto(this)" onmouseout="unhoverProyecto(this)">
-                <img src="resource/img/Captura de pantalla 2025-10-28 193622.png" alt="Proyecto like"
-                    class="proyecto-img">
+                <img src="resource/img/Captura de pantalla 2025-10-08 160003.png" alt="Proyecto youtube"
+                    class="proyecto-img"  id="proyecto_youtube">
                 <div class="proyecto_informacion">
-                    <p>Interfaz tipo Facebook desarrollada con HTML, CSS y JS.</p>
+                    <p>Simulación de de youtube.</p>
                     <button onclick="abrirYEliminar(this)">Ver en GitHub</button>
                 </div>
             </li>
-
-
         </ul>
     </section>
 
