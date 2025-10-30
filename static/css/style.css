@@ -88,12 +88,17 @@ header.casa nav button:hover {
 }
 
 /* ===== BANNER ===== */
+/* ===== BANNER ===== */
 .banner {
     position: relative;
     text-align: center;
     color: #fff;
-    margin-bottom: 100px;
+    margin: 100px auto 100px auto; /* margin-top = 30px extra respecto a antes */
+    height: 500px; /* Altura fija */
+    overflow: hidden;
+    border-radius: 20px;
 }
+
 
 .banner img {
     width: 100%;
@@ -138,6 +143,31 @@ header.casa nav button:hover {
 .banner button:hover {
     background-color: var(--color-secundario);
 }
+
+/* ===== FOTO DE PERFIL EN BANNER AJUSTADA ===== */
+.foto_perfil {
+    position: absolute;
+    top: 15px;          /* más cerca del top del banner */
+    left: 50%;
+    transform: translateX(-200%);
+    z-index: 5;
+}
+
+.foto_perfil_img {
+    width: 30px;        /* más chica */
+    height: 30px;
+    border-radius: 50%; /* completamente redonda */
+    border: 2px solid #00ffe5;
+    box-shadow: 0 0 8px rgba(0, 255, 229, 0.8);
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto_perfil_img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ffe5;
+}
+
 
 /* ===== BLOQUES GENERALES ===== */
 .section,
