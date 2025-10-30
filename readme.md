@@ -12,11 +12,17 @@ Este es un portafolio personal desarrollado con **HTML**, **CSS** y **JavaScript
 /project-root
 │
 ├── index.html
-├── style.css
-├── script.js
-└── resource/
-├── img/
-└── fonts/
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── resource/
+│       └── img/
+│           ├── banner.jpg
+│           └── foto_perfil.png
+
+
 
 markdown
 Copiar código
@@ -42,20 +48,15 @@ Copiar código
 1. Clonar repositorio:
 ```bash
 git clone https://github.com/usuario/mi-portafolio.git
-Abrir index.html en navegador
+Abrir index.html en navegador.
 
-Modificar imágenes, textos y colores según necesidad
+Modificar imágenes, textos y colores según necesidad.
 
 Autor
 Danielle Figueroa
- GitHub | Correo electrónico
+GitHub | Correo electrónico
 
 Licencia
 MIT License © 2025 Danielle Figueroa
 
-css
-Copiar código
-
-Si querís, puedo hacer **una versión aún más corta**, estilo “README mínimo” para GitHub, que se vea limpia y directa.  
-
-¿Quieres que haga esa versión también?
+Ver portafolio en línea
