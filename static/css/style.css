@@ -145,18 +145,20 @@ header.casa nav button:hover {
 }
 
 /* ===== FOTO DE PERFIL EN BANNER AJUSTADA ===== */
+/* ===== FOTO DE PERFIL EN BANNER AJUSTADA ===== */
+/* ===== FOTO DE PERFIL EN BANNER AJUSTADA ===== */
 .foto_perfil {
     position: absolute;
-    top: 15px;          /* más cerca del top del banner */
+    top: 15px;
     left: 50%;
     transform: translateX(-200%);
     z-index: 5;
 }
 
 .foto_perfil_img {
-    width: 30px;        /* más chica */
-    height: 30px;
-    border-radius: 50%; /* completamente redonda */
+    width: 80px; /* puedes subirlo de 30px a 80px si querís más visible */
+    height: 80px;
+    border-radius: 50%;
     border: 2px solid #00ffe5;
     box-shadow: 0 0 8px rgba(0, 255, 229, 0.8);
     object-fit: cover;
@@ -167,6 +169,7 @@ header.casa nav button:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffe5;
 }
+
 
 
 /* ===== BLOQUES GENERALES ===== */
@@ -431,6 +434,94 @@ header.casa nav button:hover {
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 0 15px #00ffe5;
+}
+
+/* ===== REFERENCIAS ===== */
+.referencias {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 50px;
+    background: linear-gradient(145deg, #121212, #1a1a1a);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 229, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referencias:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px #00ffe5, 0 0 70px #00ffe5;
+}
+
+.referencias h2 {
+    color: var(--color-secundario);
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #00ffe5;
+    letter-spacing: 2px;
+}
+
+.referencias img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-secundario);
+    box-shadow: 0 0 20px rgba(0, 255, 229, 0.5);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referencias img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #00ffe5;
+}
+
+.referencias p {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.referencias p:nth-child(odd) {
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+
+.referencias .bloque-ref {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 255, 229, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.referencias .bloque-ref:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(0, 255, 229, 0.3);
+}
+
+.referencias p strong {
+    color: var(--color-principal);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .referencias {
+        padding: 40px 20px;
+        width: 90%;
+    }
+
+    .referencias img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .referencias p {
+        font-size: 0.95rem;
+    }
 }
 
 /* ===== FOOTER ===== */
